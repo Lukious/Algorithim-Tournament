@@ -68,3 +68,5 @@ def Solution(s):
 s = "aaabbbccc"
 Solution(s)
 
+#Spend Time 38min 52sec
+
