@@ -1,4 +1,4 @@
-# algorithm-Tournament
+# Algorithm-Tournament
 algorithm-Tournament Repository
 
 A tournament-style summary of the algorithm problems that you solved to learn personally.
