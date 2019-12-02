@@ -13,6 +13,9 @@ There are algorithm problems that I've implemented with Python, but not with Pyt
 3. KAKAO 2019 Prob7
 4. KAKAO 2020 Prob1
 5. Baekjoon 14501
+6. Baekjoon 1463
+7. Baekjoon 11717
+
 
 # Ongoing
 1. Baekjoon 2146
