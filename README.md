@@ -15,11 +15,14 @@ There are algorithm problems that I've implemented with Python, but not with Pyt
 5. Baekjoon 14501
 6. Baekjoon 1463
 7. Baekjoon 11717
-
+8. Baekjoon 6603
+9. Baekjoon 17144
+10. Baekjoon 11727
+11. Baekjoon 16858
+12. Baekjoon 11657
 
 # Ongoing
 1. Baekjoon 2146
-
 
 # Unsloved
 1. KAKAO 2020 Prob7
