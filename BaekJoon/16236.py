@@ -1,0 +1,46 @@
+#아기상어 뚜루루루뚜루 16236
+
+from sys import stdin
+from heapq import heappush, heappop
+input = stdin.readline
+
+q = []
+n = int(input())
+a = [list(map(int, input().split())) for _ in range(n)]
+
+def init():
+    for i in range(n):
+        for j in range(n):
+            if a[i][j] == 9:
+                heappush(q, (0, i, j))
+                a[i][j] = 0
+                return
+
+def bfs():
+    body, eat, ans = 2, 0, 0
+    chk = [[False]*n for _ in range(n)]
+    while q:
+        d, x, y = heappop(q)
+        if 0 < a[x][y] < body:
+            eat += 1
+            a[x][y] = 0
+            if eat == body:
+                body += 1
+                eat = 0
+            ans += d
+            d = 0
+            while q:
+                q.pop()
+            chk = [[False]*n for _ in range(n)]
+        for dx, dy in (-1, 0), (0, -1), (1, 0), (0, 1):
+            nd, nx, ny = d+1, x+dx, y+dy
+            if nx < 0 or nx >= n or ny < 0 or ny >= n:
+                continue
+            if 0 < a[nx][ny] > body or chk[nx][ny]:
+                continue
+            chk[nx][ny] = True
+            heappush(q, (nd, nx, ny))
+    print(ans)
+
+init()
+bfs()
